@@ -1,55 +1,61 @@
 var sim = "sim"
 var nao = "nao"
-var sair ="sair"
 
 
 while(inicio != sim && inicio != nao){  
- var inicio = prompt("\n Você acaba de ser desafiado para um duelo até a morte por um espadachim mais velho e mais experiente. Se voce recusar, será desonrado. Se aceitar, poderá morrer. Vocé aceita o duelo? \n").toLowerCase()
+ var inicio = prompt("\n Você teve sua família assassinada. Você deseja se vingar do responsável? \n").toLowerCase()
 }
-  if (inicio == sim){
-   alert("Você está frente a frente com seu adversário e ambos estão prontos para começar o duelo.");
-   while(atacar != sim && atacar != nao){
-   var atacar = prompt("Voce quer atacar primeiro?").toLowerCase()
-  }
-  if(atacar == sim){
-   alert("Voce avançou rapidamente em direção a seu adversário e tentou golpea-lo. Ele defendeu seu ataque e agora voce está perto demais dele")
-  
-   while(segundoAtaque != sim && segundoAtaque != nao){
-   var segundoAtaque = prompt("Não a tempo para pensar! \n você tenta outro ataque?").toLowerCase()
-  }
-    if(segundoAtaque == sim){
-        alert("Você tenta outro ataque e consegue ferir GREVEMENTE seu adversário.\n Agora ele está de joelhos esperando o golpe fatal.")
-        while(golpeFatal != sim &&  golpeFatal != nao){
-        var golpeFatal = prompt("Você termina a luta matando seu adversário?").toLowerCase()
-        }
-        if(golpeFatal ==sim){
-            alert("\n FIM DE JOGO: VENCEDOR! \n A luta está acabada. \n Só existe um espadachim de pé: Mizu Tokugawa!")
-        }
-        else{
-            alert("\n FIM DE JOGO: VENCEDOR MISERICORDIOSO! \n Você será visto como perdedor por muitos espadachins, para outros você será lembrado como um ser misericordioso.")
-        }
+ if(inicio == sim){
+     alert("Depois de meses investigando o culpado, você finalmente o encontra: Kaito Osaka está em um barzinho.")
+    while(ataque!=sim && ataque != nao){
+     var ataque = prompt("Você deseja atacar Kaito Osaka agora?").toLowerCase()
     }
-    
-    else{
-        alert("Vocé recuou e decidiu não desferir outro ataque.")
-        alert("Seu adversário teve tempo para se recompor e te ataca rapidamente.\n Você tenta se defender mas não há mais tempo. Ele desfere um golpe fatal no seu abdomen. \n FIM DE JOGO \n")
-    }
-  }
-  else{
-      alert(" \n Você esperou. Seu adversário te atacou e acertou um golpe no sua perna. \n Sua mobilidade está comprometida. \n Felizmente, você conseguiu desviar a tempo e minimizar os danos")
-      while(danoPerna != sim &&  danoPerna != nao){ 
-      var danoPerna = prompt("Você quer atacar seu adversário?").toLowerCase()
-      }
-      if(danoPerna ==sim){
-          alert("Você está fraco e seu ataque foi previsível. Seu adversário evita seu ataque e desfere um golpe mortal em sua jugular. \n FIM DE JOGO")
-      }
-      else{
-      alert("Você não fez nada e seu adversário desferiu um golpe mortal em sua jugular. \n FIM DE JOGO!")
-      }
-  } 
- } // IF inicio
- else{
-     console.log(inicio)
-     alert("FIM DE JOGO. \n\nVocê agora é um espadachim desonrado e ninguém mais te respeita.")
-  }
+      if(ataque == sim){
+          alert("Você caminha em direção a Kaito Osaka, e desfere um golpe forte com uma garrafa de bebida na nuca do assassino.")
+         while(briga != sim && briga != nao){
+          var briga =prompt("Kaito Osaka consegue se recompor e agora está furioso. Você quer usar uma faca para lutar?").toLowerCase()
+         } if(briga == sim){
+           alert("Voce se arma com uma faca. Seu adversário te dá o primeiro golpe na esperança de te desarmar porém não consegue.")
+           while(esfaquear != sim && esfaquear != nao){
+               var esfaquear = prompt("Você esfaqueia o asssassino da sua familia?").toLowerCase()
+           }
+           if(esfaquear == sim){
+            alert("Voce esfaqueia a barriga de Kaito Osaka. O homem agora está condenado a morte. \n Você esta a poucos minutos de também se tornar um assassino")
+            while(fuga != sim && fuga != nao){
+            var fuga = prompt("Você quer correr do local do crime?").toLowerCase()
+            } if(fuga == sim){
+                alert("Kaito Osaka está morto. Você agora é um foragido das autoridades \n FIM DE JOGO")
+            }else{
+                alert("Você não foge do local e você é preso. Ao menos sua familia foi vingada. \n FIM DE JOGO")
+            }
+           }else{
+               alert("Kaito Osaka também tira uma faca e te esfaqueia na barriga. \n FIM DE JOGO")
+           }
+         }else{
+           alert("Voce escolhe não sacar uma arma branca. Agora está punho a punho.")
+           while(punho != sim && punho != nao ){
+           var punho = prompt("Voce desejar socar o seu adversario?").toLowerCase()
+           }
+           if(punho ==sim){
+               alert("Seu adversário é um bom lutador e defende seu soco. Felizmente, você também é um bom lutador. \n Ambos lutam até o cansaço\n")
+              while(finalizar != sim && finalizar != nao){
+               var finalizar = prompt("Voce quer continuar a lutar ?").toLowerCase()
+              }if (finalizar ==sim){
+                  alert("Você está em melhor forma física. Kaito Osaka tem um infarte causado pelo esforço da luta.\nFIM DE JOGO \n")
+              }else{
+                  alert("Você desistiu de matar Kaito Osaka \n FIM DE JOGO \n")
+              }
+           }
+           else{
+            alert("Kaito Osaka tira uma faca e te esfaqueia. \n FIM DE JOGO ")
+           }
 
+         }
+      } else{
+          alert("Você esperou demais e o Kaito Osaka foi embora.\n FIM DE JOGO")
+      }
+ }else{
+     alert("Você escolheu a vida de perdão.\n FIM DE JOGO \n ")
+ }
+
+ 
