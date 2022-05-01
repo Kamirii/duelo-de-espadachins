@@ -10,46 +10,71 @@ body {
     height: 200px;
 
 }
- /* .container{
-   
-
-}  */
-#titulo{
-    margin-top: 10px;
-    color: white;
-    text-align: center;    
-
-}
-#texto{
-    margin-top: 10px;
-    color: white;
-}
-
 button{
     background-color:rgb(238, 204, 15);
     color: black;
     border-radius: 4px;
     border: 2px solid white; 
     padding: 20px 40px;
-    display: inline-block;
     font-size: 16px;
     
 }
 button:hover{
     background-color: white;
 }
+/*index page */
+  .parent-container-index{
+  display:flex;
+  height: 500px;
+  justify-content: center;  
+  align-items: center; 
 
-/* #IndexPageButton{
-   
+}  
 
+/*menu page */
+#titulo{
+    margin-top: 10px;
+    color: white;
+    text-align: center;    
     
 }
-#MenuPageButton{
 
-
-} */
 .selecaoPersonagem{
     display: flex;
+    margin-top: 50px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+#personagem{
+    margin: 20px;
+}
+  .botao-menu-voltar{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+  }
+#texto-escolha{
+    margin-top: 10px;
+    color: white;
+   
+ /*sobre */ 
+}
+.botao-nav-sobre{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+#botao-nav{
+    margin: 20px;
+}
+.texto-sobre-personagem{
+   display: flex;
+   margin:10px;
+}
+#nome-personagem{
+   display: flex;
+  
 }
