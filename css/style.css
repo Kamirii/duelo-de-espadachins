@@ -58,10 +58,11 @@ button:hover{
 #texto-escolha{
     margin-top: 10px;
     color: white;
+    background-color: orangered;
    
  /*sobre */ 
 }
-.botao-nav-sobre{
+.container-botao-nav{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -77,4 +78,17 @@ button:hover{
 #nome-personagem{
    display: flex;
   
+}
+.texto-como-jogar{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#texto-explicacao-jogar{
+    color: white;
+    margin: 10px;
+    font-size: large;
 }
