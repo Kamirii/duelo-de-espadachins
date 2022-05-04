@@ -1,7 +1,0 @@
-inicio 
-aceitar ou não aceitar o duelo
-
-condicao 1
-atacar primeiro ou defender primeiro
-
-condicao2
