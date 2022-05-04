@@ -1,7 +1,6 @@
 let sim = 1
 let nao = 2
 
-alert("Tudo ok?")
 
 function tratamento(){
     entrada = prompt("Digite o número das opções")
