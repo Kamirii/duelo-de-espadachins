@@ -1,27 +1,33 @@
 let sim = 1
 let nao = 2
 
-
-function tratamento(){
+function tratamento(valor){
+console.log(valor)
     entrada = prompt("Digite o número das opções")
-    while(entrada != 1 || entrada != 2 || entrada !=0){ 
+    while(entrada != 1 || entrada != 2 || entrada != 3 ||  entrada != 4 || entrada !=0){ 
 
-        if(entrada == sim || entrada == nao){
+        if(entrada == 1 || entrada == 2  || entrada == 3|| entrada == 4){
             return faseTatakae()
         }else{
-            alert("Digite apenas o número das opções sim ou não")
+            alert("Digite apenas os números indicados")
             return tratamento()
         }
     }
 }
 
 function faseTatakae(){
-    if(entrada == sim){
+    if(entrada == 1){
         return location = "fase2Haikyuu.html"
     }else if(entrada == 2){
         return location = "gameOverHaikyuu.html"
+    } if(entrada == 3){
+        return location = "fase3Haikyuu.html"
     }
-}
+     if(entrada == 4){
+        return location = "fase4Haikyuu.html"
+    }
+    
+}   
 //colocar contador
 
 
