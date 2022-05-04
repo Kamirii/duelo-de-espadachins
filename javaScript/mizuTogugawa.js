@@ -1,8 +1,7 @@
 let sim = 1
 let nao = 2
-let entrada
 
-alert("Vamos começar agora")
+alert("Tudo ok?")
 
 function tratamento(){
     entrada = prompt("Digite o número das opções")
@@ -18,11 +17,10 @@ function tratamento(){
 }
 
 function faseTogugawa(){
-    if(entrada == 1){
-        return location = "../fases/fase2-Togugawa.html"
+    if(entrada == sim){
+        return location = "fase2Mizu.html"
     }else if(entrada == 2){
-        return location = "game-over-Togugawa.html"
-    }else{
-        return location = "../menu.html"
+        return location = "gameOverTogugawa.html"
     }
 }
+//colocar contador
