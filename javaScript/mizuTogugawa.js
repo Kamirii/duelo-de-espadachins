@@ -6,7 +6,7 @@ function tratamento(){
     while(entrada != 1 || entrada != 2 || entrada != 3 ||  entrada != 4 || entrada !=0){ 
 
         if(entrada == 1 || entrada == 2  || entrada == 3|| entrada == 4){
-            return faseTatakae()
+            return faseTogugawa()
         }else{
             alert("Digite apenas os números indicados")
             return tratamento()
@@ -14,7 +14,7 @@ function tratamento(){
     }
 }
 
-function faseTatakae(){
+function faseTogugawa(){
     if(entrada == 1){
         return location = "fase2Mizu.html"
     }else if(entrada == 2){
