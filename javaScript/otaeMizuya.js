@@ -23,7 +23,7 @@ function faseMizuya(){
         return location = "fase3Otae.html"
     }
      if(entrada == 4){
-        return location = "fase4OTae.html"
+        return location = "fase4Otae.html"
     }
     
 }   
