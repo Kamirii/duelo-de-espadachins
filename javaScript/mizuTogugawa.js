@@ -1,26 +1,29 @@
 let sim = 1
 let nao = 2
 
-alert("Tudo ok?")
-
 function tratamento(){
     entrada = prompt("Digite o número das opções")
-    while(entrada != 1 || entrada != 2 || entrada !=0){ //talvez mudar
+    while(entrada != 1 || entrada != 2 || entrada != 3 ||  entrada != 4 || entrada !=0){ 
 
-        if(entrada == sim || entrada == nao){
-            return faseTogugawa()
+        if(entrada == 1 || entrada == 2  || entrada == 3|| entrada == 4){
+            return faseTatakae()
         }else{
-            alert("Digite apenas o número das opções sim ou não")
+            alert("Digite apenas os números indicados")
             return tratamento()
         }
     }
 }
 
-function faseTogugawa(){
-    if(entrada == sim){
+function faseTatakae(){
+    if(entrada == 1){
         return location = "fase2Mizu.html"
     }else if(entrada == 2){
         return location = "gameOverTogugawa.html"
+    } if(entrada == 3){
+        return location = "fase3Mizu.html"
     }
-}
-//colocar contador
+     if(entrada == 4){
+        return location = "fase4Mizu.html"
+    }
+    
+}   
